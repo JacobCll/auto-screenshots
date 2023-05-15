@@ -15,7 +15,7 @@ class GUI:
         self.root.resizable(False, False)
         self.root.title("Screenshot Slides")
         
-        self.img_path = r"C:\Users\Jacob\OneDrive\Documents\JacobCll\Coding\Code_Practice\projects\screenshots\ss.jpg"
+        self.img_path = r"path"
 
         self.button = tk.Button(self.root, text="Click to Screenshot", font=('Arial', 18), command=lambda: [self.screenshot(), self.send_to_clipboard(win32clipboard.CF_DIB, self.img_path), self.show_image()])
         self.button.pack(side=tk.BOTTOM, pady = 30)
